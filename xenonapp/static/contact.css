@@ -1,0 +1,29 @@
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+   }
+input[type=submit]{
+    padding: 9px;
+    border-radius: 10px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   }
+   form {
+    max-width: 42%;
+    margin: auto;
+    justify-content: center;
+    margin-top: 7%;
+    margin-bottom: 8%;
+}
+   @media  only screen and (max-width:700px) {
+    form {
+        max-width: 80%;
+        margin: auto;
+        justify-content: center;
+        margin-top: 22%;
+    }
+   }

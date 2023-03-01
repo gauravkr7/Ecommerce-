@@ -1,0 +1,23 @@
+{% extends  'basic.html' %}{% load static %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'loginRegister.css' %}">
+    {% endblock css %}
+  
+   
+{% block blockbelow %}
+      
+    <form action="" method="post">
+        {% csrf_token %} 
+        <h3>Login Here</h3>
+
+        <label for="username">Username</label>
+        <input type="text" placeholder="Enter Username" id="username" name="username">
+
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Password" id="password" name="pass">
+        
+        <button type="submit">Login</button>
+        <a href="{% url 'signup' %}" >Create a account</a>
+    </form>
+    {% endblock blockbelow %}
